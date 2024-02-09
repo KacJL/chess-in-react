@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Board {
+    width: calc(64px * 8);
+    height: calc(64px * 8);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Cell {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cell img {
+    width: 54px;
+    height: 54px;
+    position: relative;
+}
+
+.Black {
+    background-color: deepskyblue;
+
+}
+
+.White {
+    background-color: #eed4ac;
+}
+
+.Selected {
+    background-color: brown;
+}
+
+.Available {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #22c022;
+}
+
+.Lost {
+    height: calc(30vh - 60px);
+    padding: 30px;
+    margin-left: 50px;
+    background-color: lightgray;
+}
